@@ -1,0 +1,132 @@
+body{
+    margin: 0; /*tira a bordinha*/
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+#topo{
+    background-color: #0f0834;
+    overflow: hidden; /*volta a cor do topo*/
+    padding: 15px; /*aumenta o header*/
+}
+.container{
+    width: 90%;
+    margin: 0 auto;  /*para centralizar*/
+}
+.logo{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.menu{
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.menu ul{
+    padding: 0;
+}
+.menu li{
+    list-style: none;
+    display: inline-block; /*ficar um do lado do outro*/
+    padding: 5px 15px; /*margem interna entre itens 5px-esquerda 10px-direita*/
+    text-transform: uppercase;
+}
+.menu li > a{ /*tirando sublinhado*/
+    color: #ddd;
+    text-decoration: none;
+    font-weight: bold;
+    padding-bottom: 5px;
+}
+.menu li > a:hover{ /*:hover =vai estilizar somente quando o mouse estiver em cima*/
+    color: #fff;
+    border-bottom: 3px solid #8b16e3;
+    
+}
+.bts{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+.bt-acesse{
+    display: inline-block; /*aceita mais estilos que o padrão(display inline*/
+    padding: 10px 30px;/*10= margem pra cima e pra baixo interna e 20px margem esquerda e direita*/
+    
+    text-decoration: none;/*tirando sublinhado*/
+    color: #fff;
+    margin-top: 12px;/*margem a partir do topo, margem pro topo*/
+    border-radius: 3px;
+    background: rgba(236,0,252,1);/*feito com https://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28\-45deg\%2C\%20rgba\%28236\%2C0\%2C252\%2C1\%29\%200\%25\%2C\%20rgba\%2868\%2C207\%2C239\%2C1\%29\%20100\%25\%29\%3B'*/
+    background: -moz-linear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(236,0,252,1)), color-stop(100%, rgba(68,207,239,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: -o-linear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: linear-gradient(135deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec00fc', endColorstr='#44cfef', GradientType=1 );
+    clip-path: polygon(90% 0, 100% 30%, 100% 100%, 0 100%, 0 0);/*feito com https://bennettfeely.com/clippy/ */
+}
+.img-banner {
+   background-image: url("../imagens/fonetecladomouse.jpg");/*para poder entrar na pasta projetos e achar a pasta imagens*/
+   background-repeat: no-repeat;
+   background-size: cover;
+   height: 80vh;
+}
+#banner h4{
+    margin: 0;
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px/*direita*/ 2px/*pra baixo*/ 2px #000 /*embaçamento/fumaça*/;
+    padding-top: 100px;
+    font-weight: normal;/*tirar negrito*/
+    letter-spacing: 4px;/*distanciamento entre as letras*/
+}
+#banner h1{
+    text-align: center;
+    color: #fff;
+    text-shadow: 2px/*direita*/ 2px/*pra baixo*/ 2px #000 /*embaçamento/fumaça*/;
+    font-size: 48px;
+}
+#banner .bt-banner{
+    text-align: center;
+}
+#banner .bt-play{
+    width: 40px;
+    height: 40px;
+    background: rgba(236,0,252,1);/*feito com https://www.cssmatic.com/gradient-generator#'\-moz\-linear\-gradient\%28\-45deg\%2C\%20rgba\%28236\%2C0\%2C252\%2C1\%29\%200\%25\%2C\%20rgba\%2868\%2C207\%2C239\%2C1\%29\%20100\%25\%29\%3B'*/
+    background: -moz-linear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(236,0,252,1)), color-stop(100%, rgba(68,207,239,1)));
+    background: -webkit-linear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: -o-lnear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: -ms-linear-gradient(-45deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    background: linear-gradient(135deg, rgba(236,0,252,1) 0%, rgba(68,207,239,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ec00fc', endColorstr='#44cfef', GradientType=1 );
+    color: #fff;
+    display: inline-block;
+    border-radius: 50%;
+    vertical-align: middle;
+    font-size: 38px;
+    padding: 20px;
+    margin-left: 25px;
+}
+@media (max-width: 742px){
+    .logo, .menu, .bts{
+        width: 100%;
+    }
+   #banner .bt-play{
+    display: block;
+    margin: 10px auto;
+   }
+}
+.rodape{
+    background-color: #0f0834;
+    overflow: hidden; /*coloca cor onde falta topo*/
+    padding: 15px; /*aumenta o tamanho do fundo*/
+    color: #fff;
+}
+.rodape p{
+    font-size: 10px;
+    display: flex;
+}
